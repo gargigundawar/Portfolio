@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gargi Gundawar, portfolio, Gargi, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Gargi's Portfolio. Full-Stack Web Developer and Cloud Enthusiasts" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Avatar -->
+    <link id='Avatar' rel="shortcut icon" href="./assets/images/Avatar.jpg" type="image/x-png">
+    <title>Portfolio | Gargi Gundawar</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+    <a href="/" class="logo"><i class="fab fa-gg"></i>
+    </i> Gargi</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Projects</a></li>
+        <!-- <li><a href="#experience">Experience</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- navbar ends -->
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm Gargi <span>Gundawar</span></h2>
+    <!-- <p>i am into <span class="typing-text"></span></p> -->
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/gargi-gundawar-bb4776226/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/gargigundawar" target="_blank"><i class="fab fa-github"></i></a></li>
+          <a href="mailto:gargigundawar1331@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+          
+        </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/Avatar.jpg" alt="">
+</div>
+</section>
+<!-- hero section ends -->
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/Gargi.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Gargi</h3>
+        <span class="tag">Full Stack and Cloud Enthusiasts</span>
+        
+        <p>Hi, I'm a student at MIT ACADEMY OF Engineering in Alandi, Pune. I'm hardworking and passionate about exploring the world of cloud computing and web development. Along with my studies in Electronics and Telecommunication, I have strong organizational skills. I'm always willing to take on additional responsibilities to help the team achieve its goals. Being organized and dependable, I successfully manage multiple priorities with a positive attitude, contributing to a productive and collaborative work environment.
+         </p>
+        
+        <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+            <div class="box">
+              <p><span> email : </span> gargigundawar1331@gmail.com</p>
+              <p><span> place : </span> Pune, India - 412105</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1AdxrakmfAsvEhPBoYh5GZLqQIUJWNs0Y/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<!-- <section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+          <div class="row" id="skillsContainer">
+
+      </div>
+</div>
+</section> -->
+<!-- skills section ends -->
+
+   <!-- skills section starts -->
+   <section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+        <div class="row" id="skillsContainer">
+            <!-- JavaScript will dynamically generate skills here -->
+        </div>
+    </div>
+
+</section>
+<!-- skills section ends -->
+
+<script>
+    // Your skills data
+    const skills = [
+        {
+            "name": "C Programming",
+            "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+        },
+        {
+            "name": "Python",
+            "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+        },
+        {
+            "name": "MATLAB",
+            "icon": "https://img.icons8.com/color/48/000000/code.png"
+        },
+        {
+            "name": "HTML",
+            "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+        },
+        {
+            "name": "CSS",
+            "icon": "https://img.icons8.com/color/48/000000/css3.png"
+        },
+        {
+            "name": "ReactJS",
+            "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+        },
+        {
+            "name": "AWS",
+            "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+        },
+        {
+            "name": "Bootstrap",
+            "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+        },
+        {
+            "name": "MySQL",
+            "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+        },
+        {
+            "name": "Java",
+            "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+        },
+        {
+            "name": "Spring Boot",
+            "icon": "https://img.icons8.com/color/48/000000/spring-logo.png"
+        },
+        {
+            "name": "Postman",
+            "icon": "https://img.icons8.com/color/48/000000/api-settings.png"
+        },
+        
+        {
+            "name": "GitHub",
+            "icon": "https://img.icons8.com/ios-filled/50/000000/github.png"
+        },
+        {
+            "name": "Communication",
+            "icon": "https://img.icons8.com/color/48/000000/communication.png"
+        },
+        {
+            "name": "Data Structure and Algorithm",
+            "icon": "https://img.icons8.com/color/48/000000/data-configuration.png"
+        }
+    ];
+
+    // Dynamically generate the skills section
+    const skillsContainer = document.getElementById('skillsContainer');
+    skills.forEach(skill => {
+        const skillBox = document.createElement('div');
+        skillBox.className = 'skill-box';
+
+        const skillIcon = document.createElement('img');
+        skillIcon.className = 'skill-icon';
+        skillIcon.src = skill.icon;
+        skillIcon.alt = `${skill.name} icon`;
+
+        const skillContent = document.createElement('div');
+        const skillName = document.createElement('h3');
+        skillName.textContent = skill.name;
+
+        skillContent.appendChild(skillName);
+        skillBox.appendChild(skillIcon);
+        skillBox.appendChild(skillContent);
+
+        skillsContainer.appendChild(skillBox);
+    });
+</script>
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+  
+      <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+  
+      <div class="box-container">
+  
+      <div class="box">
+          <div class="image">
+          <img draggable="false" src="./assets/images/educat/college.jpeg" alt="">
+          </div>
+          <div class="content">
+          <h3>Bachelor of Engineering in Electronics and Telecommunication</h3>
+          <p>MIT ACADEMY OF Engineering | SPPU</p>
+          <h4>2021-2025 | Pursuing</h4>
+          </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/senior_college.jpg" alt="">
+        </div>
+        <div class="content">
+        <!-- <h3>HSC Science | Informatic Practices</h3> -->
+        <h3> H.S.C [2020-2021] - 97.8% </h3>
+        <p>St. Paul Senior College, Nagpur |  MSBSHSE</p>
+        <h4>2019-2021 | Completed</h4>
+        </div>
+      </div>
+  
+      <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/school.jpeg" alt="">
+        </div>
+        <div class="content">
+        <!-- <h3>HSC Science | Informatic Practices</h3> -->
+        <h3> S.S.C [2018-2019] - 95.6% </h3>
+        <p>St. Anne's Public School, Warora, Dist-Chandrapur | CBSE</p>
+        <h4>2009-2019 | Completed</h4>
+        </div>
+      </div>
+
+      
+  </div>
+  </section>
+  <!-- education section ends -->
+
+  <!-- work project section starts -->
+  <!-- <section class="work" id="work">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <div class="box-container" id="project-container"> -->
+        <!-- Your project boxes will be dynamically added here -->
+    <!-- </div>
+  </section> -->
+  <!-- work project section ends -->
+ <!-- work project section starts -->
+  <section class="work" id="work">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <div class="box-container" id="project-container">
+        <!-- Your project boxes will be dynamically added here -->
+    </div>
+  </section>
+  <!-- work project section ends -->
+
+  <!-- Overlay for project description -->
+  <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <span class="close-btn" onclick="closeOverlay()"><i class="fas fa-times"></i></span>
+      <h2 id="project-title"></h2>
+      <p id="project-description"></p>
+    </div>
+  </div>
+
+  <script>
+    // Sample projects data
+    const projects = [
+        {
+            name: "Contactless Temperature Detector Gate",
+            image: "assets/images/projects/CTDG.jpg",
+            description: "Implemented a Hardware (IOT) Based Project that detects temperature of the Person walking through the gate Automatically and stores the data in database. Technology Stack: IOT, Python, HTML, CSS"
+        },
+        {
+            name: "Employee Payroll Management System Website",
+            image: "assets/images/projects/EPMS.png",
+            description: "Designed an employee payroll administration system in NetBeans. Technology Stack: Oracle Database, Spring MVC, HTML, CSS, JavaScript"
+        },
+        {
+            name: "TripNest Tourism Website",
+            image: "assets/images/projects/TripNest.png",
+            description: "Designed an attractive Tours and Travels Website that would help clients to book their destination place. Technology Stack: Spring Boot, MYSQL, JavaScript, React, Postman"
+        },
+        {
+            name: "ServiceConnect Microservice based Web Application",
+            image: "assets/images/projects/ServiceConnect.png",
+            description: "Microservice based Web Application that connects users to trusted service providers. Technology Stack: Spring Boot, MYSQL, Java, React, Postman"
+        },
+        {
+            name: "SMART INDIA HACKATHON 2023 - Automatic Drug Dispenser System",
+            image: "assets/images/projects/DDS.png",
+            description: "Automatic Drug Dispenser System developed for the SMART INDIA HACKATHON 2023. Technology Stack: IOT, Python, HTML, CSS, MYSQL, Spring Boot"
+        }
+    ];
+
+    // Function to dynamically generate project boxes
+    function generateProjectBoxes() {
+        const projectContainer = document.getElementById("project-container");
+        projects.forEach(project => {
+            const box = document.createElement("div");
+            box.classList.add("box");
+            box.innerHTML = `
+            <img src="${project.image}" alt="${project.name}">
+            <div class="project-info">
+                <h3>${project.name}</h3>
+                <p>${project.description}</p>
+            </div>
+            `;
+            projectContainer.appendChild(box);
+        });
+    }
+
+    // Generate project boxes when the page loads
+    window.onload = generateProjectBoxes;
+  </script>
+
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdIM3bzdzjGUQyXV9iq8Ahvkkim3he2h4vURcDo_dA-TzzHrA/viewform?embedded=true" width="640" height="718" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      
+          
+        
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Gargi's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. </p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> Projects</a>
+        
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>gargigundawar1331@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Pune, India-412105</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/gargi-gundawar-bb4776226" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/gargigundawar" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:gargigundawar1331@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a>Gargi Gundawar</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
