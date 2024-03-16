@@ -36,12 +36,19 @@
 </header>
 <!-- navbar ends -->
 
+   <!-- Jay Gajanan -->
+   <div class="marathi-text">
+    <p>|| जय गजानन ||</p>
+</div>
+
+
+
 <!-- hero section starts -->
 <section class="home" id="home">
     
 
     <div class="content">
-    <h2>Hi There,<br/> I'm Gargi <span>Gundawar</span></h2>
+    <h2>Hii There,<br/> I'm Gargi <span>Gundawar</span></h2>
     <!-- <p>i am into <span class="typing-text"></span></p> -->
     <a href="#about" class="btn"><span>About Me</span>
       <i class="fas fa-arrow-circle-down"></i>
@@ -74,7 +81,7 @@
         <h3>I'm Gargi</h3>
         <span class="tag">Full Stack and Cloud Enthusiasts</span>
         
-        <p>Hi, I'm a student at MIT ACADEMY OF Engineering in Alandi, Pune. I'm hardworking and passionate about exploring the world of cloud computing and web development. Along with my studies in Electronics and Telecommunication, I have strong organizational skills. I'm always willing to take on additional responsibilities to help the team achieve its goals. Being organized and dependable, I successfully manage multiple priorities with a positive attitude, contributing to a productive and collaborative work environment.
+        <p>Hi, I'm a Student at MIT Academy Of Engineering, Alandi, Pune. I'm hardworking and passionate about exploring the world of Cloud Computing and Web Development. Along with my studies in Electronics and Telecommunication, I have strong organizational skills. I'm always willing to take on additional responsibilities to help the team achieve its goals. Being organized and dependable, I successfully manage multiple priorities with a positive attitude, contributing to a productive and collaborative work environment.
          </p>
         
         <div class="box-container">
@@ -89,7 +96,7 @@
         </div>
         
         <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1L_0dXbRd7pq2ZGR2FKutV9lqvIFgwvGL/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
+            <a href="https://drive.google.com/file/d/17OMRVY9baOx_dkDLEK-Cd7WaxGh3wJjO/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -111,9 +118,8 @@
 </div>
 </section> -->
 <!-- skills section ends -->
-
-   <!-- skills section starts -->
-   <section class="skills" id="skills">
+<!-- skills section starts -->
+<section class="skills" id="skills">
 
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
 
@@ -126,12 +132,22 @@
 </section>
 <!-- skills section ends -->
 
+<style>
+    .skill-box {
+        text-align: center;
+        margin: 10px;
+    }
+    .skill-content {
+        margin-top: 5px;
+    }
+</style>
+
 <script>
     // Your skills data
     const skills = [
         {
-            "name": "C Programming",
-            "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+            "name": "C",
+            "icon": "https://img.icons8.com/color/48/000000/c-programming.png" 
         },
         {
             "name": "Python",
@@ -175,12 +191,19 @@
         },
         {
             "name": "Postman",
-            "icon": "https://img.icons8.com/color/48/000000/api-settings.png"
+            "icon": "./assets/images/postman.png"
         },
-        
         {
-            "name": "GitHub",
-            "icon": "https://img.icons8.com/ios-filled/50/000000/github.png"
+            "name": "Kubernetes",
+            "icon": "https://img.icons8.com/color/48/000000/kubernetes.png"
+        },
+        {
+            "name": "Docker",
+            "icon": "https://img.icons8.com/color/48/000000/docker.png"
+        },
+        {
+            "name": "Git",
+            "icon": "https://img.icons8.com/color/48/000000/git.png"
         },
         {
             "name": "Communication",
@@ -202,7 +225,9 @@
         skillIcon.className = 'skill-icon';
         skillIcon.src = skill.icon;
         skillIcon.alt = `${skill.name} icon`;
+        
 
+        skillIcon.style.maxWidth = '55px';
         const skillContent = document.createElement('div');
         const skillName = document.createElement('h3');
         skillName.textContent = skill.name;
@@ -296,41 +321,49 @@
         {
             name: "Contactless Temperature Detector Gate",
             image: "assets/images/projects/CTDG.jpg",
-            description: "Implemented a Hardware (IOT) Based Project that detects temperature of the Person walking through the gate Automatically and stores the data in database. Technology Stack: IOT, Python, HTML, CSS"
+            description: "Implemented a Hardware (IOT) Based Project that detects temperature of the Person walking through the gate Automatically and stores the data in database. Technology Stack: IOT, Python, HTML, CSS",
+            githubLink: "https://github.com/gargigundawar/Contactless-Temperature-Detector-Gate"
         },
         {
             name: "Employee Payroll Management System Website",
             image: "assets/images/projects/EPMS.png",
-            description: "Designed an employee payroll administration system in NetBeans. Technology Stack: Oracle Database, Spring MVC, HTML, CSS, JavaScript"
+            description: "Designed an employee payroll administration system in NetBeans. Technology Stack: Oracle Database, Spring MVC, HTML, CSS, JavaScript",
+            githubLink: "https://github.com/gargigundawar/Employee_Payroll_Management_System"
         },
         {
             name: "TripNest Tourism Website",
             image: "assets/images/projects/TripNest.png",
-            description: "Designed an attractive Tours and Travels Website that would help clients to book their destination place. Technology Stack: Spring Boot, MYSQL, JavaScript, React, Postman"
+            description: "Designed an attractive Tours and Travels Website that would help clients to book their destination place. Technology Stack: Spring Boot, MYSQL, JavaScript, React, Postman",
+            githubLink: "https://github.com/gargigundawar/TripNest-Travel-Website"
         },
         {
             name: "ServiceConnect Microservice based Web Application",
             image: "assets/images/projects/ServiceConnect.png",
-            description: "Microservice based Web Application that connects users to trusted service providers. Technology Stack: Spring Boot, MYSQL, Java, React, Postman"
+            description: "Microservice based Web Application that connects users to trusted service providers. Technology Stack: Spring Boot, MYSQL, Java, React, Postman",
+            githubLink: "https://github.com/gargigundawar/ServiceConnect"
         },
         {
             name: "SMART INDIA HACKATHON 2023 - Automatic Drug Dispenser System",
             image: "assets/images/projects/DDS.png",
-            description: "Automatic Drug Dispenser System developed for the SMART INDIA HACKATHON 2023. Technology Stack: IOT, Python, HTML, CSS, MYSQL, Spring Boot"
+            description: "Automatic Drug Dispenser System developed for the SMART INDIA HACKATHON 2023. Technology Stack: IOT, Python, HTML, CSS, MYSQL, Spring Boot",
+            youtubeLink: "https://youtu.be/wMGDuM4O70E?si=nznIov3Z-BqUKHsF"
         }
     ];
 
-    // Function to dynamically generate project boxes
-    function generateProjectBoxes() {
+   function generateProjectBoxes() {
         const projectContainer = document.getElementById("project-container");
         projects.forEach(project => {
             const box = document.createElement("div");
             box.classList.add("box");
             box.innerHTML = `
-            <img src="${project.image}" alt="${project.name}">
+            <a href="${project.youtubeLink ? project.youtubeLink : project.githubLink}" target="_blank">
+                <img src="${project.image}" alt="${project.name}">
+            </a>
             <div class="project-info">
                 <h3>${project.name}</h3>
                 <p>${project.description}</p>
+                ${project.githubLink ? `<a href="${project.githubLink}" target="_blank">GitHub Repository</a>` : ''}
+                ${project.youtubeLink ? `<a href="${project.youtubeLink}" target="_blank">YouTube Video</a>` : ''}
             </div>
             `;
             projectContainer.appendChild(box);
@@ -339,7 +372,7 @@
 
     // Generate project boxes when the page loads
     window.onload = generateProjectBoxes;
-  </script>
+</script>
 
 
 <!-- contact section starts -->

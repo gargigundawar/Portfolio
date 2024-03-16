@@ -1320,3 +1320,29 @@ form .button-area {
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Added box shadow */
 }
+
+
+.marathi-text {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 80px; /* Adjust as needed */
+  color: #333; /* Adjust color as needed */
+  /* Additional styling can be added here */
+}
+
+
+.skill-box {
+  text-align: center;
+  margin: 10px;
+}
+
+.skill-icon {
+  max-width: 48px;
+  border-radius: 50%; /* Make icons circular */
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  padding: 10px; /* Padding to create space around the icon */
+}
+
+.skill-content {
+  margin-top: 5px;
+}
